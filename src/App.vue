@@ -1,14 +1,15 @@
 <template>
   <div id="app" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
-    <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
+    <Home />
+    <!-- <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" /> -->
     <div class="parent">
-      <Home :nightMode="nightMode" />
-      <About id="about" :nightMode="nightMode" />
+      <!-- <Home /> -->
+      <!-- <About id="about" :nightMode="nightMode" />
       <Skills id="skills" :nightMode="nightMode" />
       <Portfolio id="portfolio" :nightMode="nightMode" />
       <Recommendation :nightMode="nightMode" />
       <Contact id="contact" :nightMode="nightMode" />
-      <Footer :nightMode="nightMode" />
+      <Footer :nightMode="nightMode" /> -->
     </div>
   </div>
 </template>
@@ -28,14 +29,14 @@ import info from "../info";
 export default {
   name: "App",
   components: {
-    Navbar,
+    // Navbar,
     Home,
-    About,
-    Skills,
-    Portfolio,
-    Recommendation,
-    Contact,
-    Footer,
+    // About,
+    // Skills,
+    // Portfolio,
+    // Recommendation,
+    // Contact,
+    // Footer,
   },
   data() {
     return {

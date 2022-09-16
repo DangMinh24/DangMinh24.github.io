@@ -1,6 +1,6 @@
 .DS_Store
 
-/dist
+dist
 
 firebase.json
 .firebase

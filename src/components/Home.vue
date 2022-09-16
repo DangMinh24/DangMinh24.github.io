@@ -17,7 +17,7 @@
           <span
             class="home-title"
             :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >hello there!</span
+            >Hi! My name is Dang Tran</span
           >
           <div>
             <p v-html="description"></p>
@@ -81,7 +81,7 @@ export default {
       linkedin: info.links.linkedin,
       github: info.links.github,
       angellist: info.links.angellist,
-      resume: info.links.resume
+      resume: info.links.resume,
     };
   },
   methods: {
