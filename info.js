@@ -9,7 +9,7 @@ let info = {
     }
   },
   description:
-    "(Still in development) I am a senior Computer Science undergraduate student and upcomming Ph.D candidate at Wichita State Univeristy. I have a strong passion and experience for Robotics, Natural Language Processing, Artificial Intelligence and Machine Learning. I am currently a researcher assistant at Robot Intelligence Lab (RIL) at Wichita State Univeristy, and fortunately to be advised by Prof. Hongsheng He. <br><br>I have worked in varous projects, in both academic and industrial environments.",
+    "(Still in development) I am a senior Computer Science undergraduate student and upcomming Ph.D candidate at Wichita State Univeristy. I have a strong passion and experience for Robotics, Natural Language Processing, Artificial Intelligence and Machine Learning. I am currently a researching assistant at Robot Intelligence Lab (RIL) at Wichita State Univeristy, and fortunately to be advised by Prof. Hongsheng He. <br><br>I have worked in varous projects, in both academic and industrial environments.",
   links: {
     // linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
     github: "https://github.com/DangMinh24",
