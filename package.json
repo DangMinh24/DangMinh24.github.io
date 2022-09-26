@@ -12,6 +12,7 @@
     "@chenfengyuan/vue-carousel": "^1.0.5",
     "aos": "^3.0.0-beta.6",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "bootstrap": "^5.2.1",
     "core-js": "^3.6.4",
     "emailjs-com": "^2.4.1",
     "gh-pages": "^4.0.0",

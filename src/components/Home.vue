@@ -25,7 +25,7 @@
           </div>
           <div class="text-center pb-4">
             <button
-              class="btn btn-outline-secondary mx-2 "
+              class="btn btn-outline-secondary mx-2"
               @click="open('linkedin')"
               v-tooltip.bottom="'LinkedIn'"
             >
@@ -57,6 +57,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
