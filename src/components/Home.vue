@@ -3,6 +3,7 @@
     :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
     class="pt-5 p-st"
   >
+    <navigation></navigation>
     <div
       class="container"
       data-aos="fade"
@@ -61,12 +62,13 @@
 <script>
 import info from "../../info";
 
-import Wave from "./helpers/Wave";
+// import Wave from "./helpers/Wave";
 
+import Navigation from "./Navigation.vue";
 export default {
   name: "Home",
   components: {
-    Wave,
+    Navigation,
   },
   props: {
     nightMode: {
@@ -84,24 +86,24 @@ export default {
       resume: info.links.resume,
     };
   },
-  methods: {
-    open(link) {
-      switch (link) {
-        case "linkedin":
-          window.open(this.linkedin, "_blank");
-          break;
-        case "github":
-          window.open(this.github, "_blank");
-          break;
-        case "angellist":
-          window.open(this.angellist, "_blank");
-          break;
-        case "resume":
-          window.open(this.resume, "_blank");
-          break;
-      }
-    },
-  },
+  // methods: {
+  //   open(link) {
+  //     switch (link) {
+  //       case "linkedin":
+  //         window.open(this.linkedin, "_blank");
+  //         break;
+  //       case "github":
+  //         window.open(this.github, "_blank");
+  //         break;
+  //       case "angellist":
+  //         window.open(this.angellist, "_blank");
+  //         break;
+  //       case "resume":
+  //         window.open(this.resume, "_blank");
+  //         break;
+  //     }
+  //   },
+  // },
 };
 </script>
 
@@ -110,13 +112,11 @@ export default {
   font-size: 28px;
   font-weight: 500;
 }
-
 img {
   max-width: 300px;
   margin-top: 60px;
   transform: rotateY(180deg);
 }
-
 @media only screen and (max-width: 580px) {
   img {
     object-fit: cover;
@@ -128,36 +128,29 @@ img {
     border: 2px solid rgb(205, 205, 205);
   }
 }
-
 .fa {
   font-size: 15px;
 }
-
 .btn {
   border-color: #669db3ff;
   color: #669db3ff;
 }
-
 .btn:hover {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;
 }
-
 .btn:focus {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;
 }
-
 .btn:focus {
   outline: none !important;
 }
-
 p {
   text-align: justify;
   font-weight: 400;
 }
-
 /* LEAVES */
 </style>

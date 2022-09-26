@@ -1,36 +1,54 @@
 import Vue from 'vue'
 import App from './App.vue'
-
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import VueParallaxJs from 'vue-parallax-js'
-import VueScrollTo from 'vue-scrollto'
 import VueRouter from 'vue-router'
-import VTooltip from 'v-tooltip'
 
-var VueCookie = require('vue-cookie');
-
-Vue.use(VTooltip)
 Vue.use(VueRouter)
-Vue.use(VueScrollTo)
-Vue.use(VueCookie);
-Vue.use(VueParallaxJs)
 
-Vue.config.productionTip = false
-
+import Home from "./components/Home.vue"
+import Research from "./views/Research.vue"
+import Education from "./views/Education.vue"
+import Experience from "./views/Experience.vue"
+import CV from "./views/CV.vue"
+import Blog from "./views/Blog.vue"
 const routes = [
-  { path: '/'}
+  {
+    path: '/',
+    name: "Home",
+    component: Home
+  },
+  {
+    path: '/research',
+    name: "Research",
+    component: Research
+  },
+  {
+    path: '/education',
+    name: "Education",
+    component: Education
+  },
+  {
+    path: '/experience',
+    name: "experience",
+    component: Experience
+  },
+  {
+    path: '/cv',
+    name: "CV",
+    component: CV
+  },
+  {
+    path: '/blog',
+    name: "Blog",
+    component: Blog
+  }
 ]
 
 const router = new VueRouter({
-  mode:'history',
+  mode: 'history',
   routes // short for `routes: routes`
 })
 
 new Vue({
-  created () {
-    AOS.init()
-  },
-  router,
   render: h => h(App),
+  router,
 }).$mount('#app')
