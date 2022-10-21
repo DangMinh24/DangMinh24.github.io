@@ -4,7 +4,34 @@
     class="pt-5 p-st"
   >
     <navigation></navigation>
-    <div
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-1">
+          <img src="" alt="" />
+        </div>
+        <div class="col-lg-11">
+          <div class="row">
+            <!-- {{ this.$store.state.name }}
+              {{ this.$store.state.lastname }} -->
+            <span class="home-title">Hi! My name is __ __</span>
+          </div>
+          <div class="row">
+            <p>
+              (Still in development) I am a senior Computer Science
+              undergraduate student and upcomming Ph.D candidate at Wichita
+              State Univeristy. I have a strong passion and experience for
+              Robotics, Natural Language Processing, Artificial Intelligence and
+              Machine Learning. I am currently a researching assistant at Robot
+              Intelligence Lab (RIL) at Wichita State Univeristy, and
+              fortunately to be advised by Prof. Hongsheng He. <br /><br />I
+              have worked in varous projects, in both academic and industrial
+              environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div
       class="container"
       data-aos="fade"
       data-aos-once="true"
@@ -55,14 +82,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
-
 </template>
 
 <script>
 import info from "../../info";
-
+import { Drag, Drop } from "vue-drag-drop";
 // import Wave from "./helpers/Wave";
 
 import Navigation from "./Navigation.vue";
@@ -70,6 +96,8 @@ export default {
   name: "Home",
   components: {
     Navigation,
+    Drag,
+    Drop,
   },
   props: {
     nightMode: {
@@ -83,7 +111,7 @@ export default {
       name: info.name,
       linkedin: info.links.linkedin,
       github: info.links.github,
-      angellist: info.links.angellist,
+      // angellist: info.links.angellist,
       resume: info.links.resume,
     };
   },

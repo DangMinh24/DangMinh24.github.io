@@ -1,54 +1,67 @@
-import Vue from 'vue'
-import App from './App.vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import App from "./App.vue";
+import VueRouter from "vue-router";
+import { store } from "./store/store";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-import Home from "./components/Home.vue"
-import Research from "./views/Research.vue"
-import Education from "./views/Education.vue"
-import Experience from "./views/Experience.vue"
-import CV from "./views/CV.vue"
-import Blog from "./views/Blog.vue"
+import Home from "./components/Home.vue";
+import Research from "./views/Research.vue";
+import Education from "./views/Education.vue";
+import Experience from "./views/Experience.vue";
+import CV from "./views/CV.vue";
+import Blog from "./views/Blog.vue";
+
+import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+import "bootstrap/dist/css/bootstrap.css";
+
+Vue.use(BootstrapVue);
 const routes = [
   {
-    path: '/',
+    path: "/",
     name: "Home",
-    component: Home
+    component: Home,
   },
   {
-    path: '/research',
+    path: "/research",
     name: "Research",
-    component: Research
+    component: Research,
   },
   {
-    path: '/education',
+    path: "/education",
     name: "Education",
-    component: Education
+    component: Education,
   },
   {
-    path: '/experience',
+    path: "/experience",
     name: "experience",
-    component: Experience
+    component: Experience,
   },
   {
-    path: '/cv',
+    path: "/cv",
     name: "CV",
-    component: CV
+    component: CV,
   },
   {
-    path: '/blog',
+    path: "/blog",
     name: "Blog",
-    component: Blog
-  }
-]
+    component: Blog,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Blog,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
-  routes // short for `routes: routes`
-})
+  mode: "history",
+  routes, // short for `routes: routes`
+});
 
 new Vue({
-  render: h => h(App),
+  render: (h) => h(App),
   router,
-}).$mount('#app')
+  store,
+}).$mount("#app");

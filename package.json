@@ -13,6 +13,7 @@
     "aos": "^3.0.0-beta.6",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "bootstrap": "^5.2.1",
+    "bootstrap-vue": "^2.22.0",
     "core-js": "^3.6.4",
     "emailjs-com": "^2.4.1",
     "gh-pages": "^4.0.0",
@@ -21,11 +22,13 @@
     "v-tooltip": "^2.0.3",
     "vue": "^2.6.11",
     "vue-cookie": "^1.1.4",
+    "vue-drag-drop": "^1.1.4",
     "vue-nav-tabs": "^0.5.7",
     "vue-parallax-js": "^0.2.3",
     "vue-router": "^3.4.2",
     "vue-scrollto": "^2.18.1",
-    "vueperslides": "^2.10.2"
+    "vueperslides": "^2.10.2",
+    "vuex": "^2.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",

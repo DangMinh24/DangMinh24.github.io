@@ -29,14 +29,20 @@
       </div>
     </div>
   </div> -->
-  <div>
+  <div
+    :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
+    class="pt-5 p-st"
+  >
     <navigation></navigation>
-    <div class="container-fluid bg-dark text-white border">
+    <div class="container-fluid">
       <h1 class="text-start">Research History</h1>
-      <h2 class="text-start">Summary:</h2>
-      <p class="text-start">Interest in Natural Language Processing, Machine Learning and Robotics.</p>
-      <p>Start with Natural Language Processing. But eventually find interest in Natural Language Processing and Robotics</p>
-      
+      <p class="text-start">
+        Interest in Natural Language Processing, Machine Learning and Robotics.
+      </p>
+      <p>
+        Start with Natural Language Processing. But eventually find interest in
+        Natural Language Processing and Robotics
+      </p>
     </div>
   </div>
 </template>

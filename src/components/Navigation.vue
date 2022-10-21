@@ -57,6 +57,15 @@
           >Blog</router-link
         >
       </li>
+      <li class="nav-item">
+        <router-link
+          to="/contact"
+          class="nav-link"
+          active-class="active"
+          style="cursor: pointer"
+          >Contact</router-link
+        >
+      </li>
     </ul>
     <hr />
   </div>
