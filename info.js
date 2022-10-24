@@ -1,19 +1,19 @@
 let info = {
   name: "Dang Tran",
   logo_name: "Dang",
-  flat_picture: require("./src/assets/potrait.jpg"),
+  // flat_picture: require("./src/assets/potrait.jpg"),
   config: {
     use_cookies: true,
     navbar: {
-      blur: false
-    }
+      blur: false,
+    },
   },
   description:
     "(Still in development) I am a senior Computer Science undergraduate student and upcomming Ph.D candidate at Wichita State Univeristy. I have a strong passion and experience for Robotics, Natural Language Processing, Artificial Intelligence and Machine Learning. I am currently a researching assistant at Robot Intelligence Lab (RIL) at Wichita State Univeristy, and fortunately to be advised by Prof. Hongsheng He. <br><br>I have worked in varous projects, in both academic and industrial environments.",
   links: {
     // linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
     github: "https://github.com/DangMinh24",
-    website: "https://dangminh24.github.io/"
+    website: "https://dangminh24.github.io/",
     // angellist: "https://angel.co/u/hrishikesh-paul",
     // resume:
     //   "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
@@ -462,7 +462,7 @@ let info = {
     //   company: "Skylark Drones",
     //   location: "Bangalore"
     // }
-  ]
+  ],
 };
 
 export default info;
