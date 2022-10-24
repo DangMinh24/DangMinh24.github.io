@@ -1,34 +1,4 @@
 <template>
-  <!-- <div
-    :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
-    class="pt-5 p-st"
-  >
-    <navigation></navigation>
-    <div
-      class="container"
-      data-aos="fade"
-      data-aos-once="true"
-      data-aos-duration="1000"
-    >
-      <div class="row align-items-center">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
-          <img :src="picture" />
-        </div>
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
-          <span
-            class="home-title"
-            :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >Hi! My name is Dang Tran</span
-          >
-          <div>
-            <p v-html="description"></p>
-          </div>
-          <div class="text-center pb-4">
-          </div>
-        </div>  
-      </div>
-    </div>
-  </div> -->
   <div
     :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
     class="pt-5 p-st"
@@ -36,13 +6,34 @@
     <navigation></navigation>
     <div class="container-fluid">
       <h1 class="text-start">Research History</h1>
-      <p class="text-start">
-        Interest in Natural Language Processing, Machine Learning and Robotics.
-      </p>
-      <p>
-        Start with Natural Language Processing. But eventually find interest in
-        Natural Language Processing and Robotics
-      </p>
+      <h2>Publications</h2>
+      <h4>Natural Language for Robotics</h4>
+      <div class="container-fluid">
+        <ul class="list" style="list-style-type: disc">
+          <li>
+            Tran, Dang, Fujian Yan, Yimesker Yihun, Jindong Tan, and Hongsheng
+            He. "A Framework of Controlled Robot Language for Reliable
+            Human-Robot Collaboration." In International Conference on Social
+            Robotics, pp. 339-349. Springer, Cham, 2021.
+          </li>
+          <li>
+            Yan, Fujian, Dang M. Tran, and Hongsheng He. "Robotic understanding
+            of object semantics by referringto a dictionary." International
+            Journal of Social Robotics 12, no. 6 (2020): 1251-1263.
+          </li>
+        </ul>
+      </div>
+
+      <h4>Perception for Robotics</h4>
+      <div class="container-fluid">
+        <ul class="list" style="list-style-type: disc">
+          <li>
+            Dang Tran, Ahlgren Nate, Chris Depcik, and Hongsheng He. "Adaptive
+            Active Fusion of Visual and Single-Point LiDAR Sensors". In IEEE
+            Transactions On Instrumentation And Measurement, (2022)
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

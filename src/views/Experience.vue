@@ -5,8 +5,18 @@
   >
     <navigation></navigation>
 
-    <div id="Content">
+    <div class="container-fluid">
       <h1>Experience History</h1>
+      <ul class="list" style="list-style-type: disc">
+        <li>
+          Research Assistant + Robotic Programmer at National Institute for
+          Aviation Research (NIAR), Wichita, Kansas.
+        </li>
+        <li>
+          Undegraduate Research Assistant at Intelligent Robotic Lab at Wichita
+          State University, Wichita Kansas.
+        </li>
+      </ul>
     </div>
   </div>
 </template>

@@ -31,58 +31,13 @@
         </div>
       </div>
     </div>
-    <!-- <div
-      class="container"
-      data-aos="fade"
-      data-aos-once="true"
-      data-aos-duration="1000"
-    >
-      <div class="row align-items-center">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
-          <img :src="picture" />
-        </div>
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
-          <span
-            class="home-title"
-            :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >Hi! My name is Dang Tran</span
-          >
-          <div>
-            <p v-html="description"></p>
-          </div>
-          <div class="text-center pb-4">
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('linkedin')"
-              v-tooltip.bottom="'LinkedIn'"
-            >
-              <i class="fab fa-linkedin"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('github')"
-              v-tooltip.bottom="'GitHub'"
-            >
-              <i class="fab fa-github"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('angellist')"
-              v-tooltip.bottom="'AngelList'"
-            >
-              <i class="fab fa-angellist"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('resume')"
-              v-tooltip.bottom="'Resume'"
-            >
-              <i class="fa fa-file"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <div class="container-fluid">
+      <h2>Research Interests</h2>
+      <p>
+        I found interests in solving "Terry Winograd" problem -- making a Robot
+        System can understand human language.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -112,7 +67,7 @@ export default {
       linkedin: info.links.linkedin,
       github: info.links.github,
       // angellist: info.links.angellist,
-      resume: info.links.resume,
+      // resume: info.links.resume,
     };
   },
   // methods: {
