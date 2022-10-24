@@ -1,5 +1,8 @@
 <template>
-  <div id="nav">
+  <div
+    :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
+    class="pt-5 p-st"
+  >
     <navigation></navigation>
 
     <div id="Content">
