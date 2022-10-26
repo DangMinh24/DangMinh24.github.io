@@ -5,7 +5,7 @@
   >
     <navigation></navigation>
     <div class="container-fluid">
-      <h1>CV History</h1>
+      <h1>Contact</h1>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@
 <script>
 import Navigation from "../components/Navigation.vue";
 export default {
-  name: "CV",
+  name: "Contact",
   components: {
     Navigation,
   },

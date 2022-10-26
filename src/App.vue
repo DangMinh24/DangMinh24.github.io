@@ -1,75 +1,12 @@
 <template>
-  <!-- <div>
-    <router-view></router-view>
-  </div> -->
-
   <v-app>
     <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-// import Navbar from "./components/Navbar.vue";
-// import Home from "./components/Home";
-// import About from "./components/About";
-// import Skills from "./components/Skills";
-// import Portfolio from "./components/Portfolio";
-// import Recommendation from "./components/Recommendation";
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
-
-// import info from "../info";
-
 export default {
   name: "App",
-  // components: {
-  // Navbar,
-  // Home,
-  // About,
-  // Skills,
-  // Portfolio,
-  // Recommendation,
-  // Contact,
-  // Footer,
-  // },
-  // data() {
-  //   return {
-  //     nightMode: false,
-  //     config: info.config,
-  //   };
-  // },
-  // created() {
-  //   if (this.config.use_cookies) {
-  //     this.nightMode = this.$cookie.get("nightMode") === "true" ? true : false;
-  //   }
-  // },
-  // mounted() {
-  //   ["about", "contact", "skills", "portfolio"].forEach((l) => {
-  //     if (window.location.href.includes(l)) {
-  //       var elementPosition = document.getElementById(l).offsetTop;
-  //       window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
-  //     }
-  //   });
-  // },
-  // methods: {
-  //   switchMode(mode) {
-  //     if (this.config.use_cookies) {
-  //       this.$cookie.set("nightMode", mode);
-  //     }
-  //     this.nightMode = mode;
-  //   },
-  //   scrollTo(ele) {
-  //     if (ele == "home") {
-  //       this.$router.push(`/`);
-  //       window.scrollTo({ top: -80, behavior: "smooth" });
-  //     } else {
-  //       var elementPosition = document.getElementById(ele).offsetTop;
-  //       window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
-  //       if (this.$router.history.current.path !== `/${ele}`)
-  //         this.$router.push(`/${ele}`);
-  //     }
-  //   },
-  // },
 };
 </script>
 

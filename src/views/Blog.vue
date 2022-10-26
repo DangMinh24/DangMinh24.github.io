@@ -4,7 +4,7 @@
     class="pt-5 p-st"
   >
     <navigation></navigation>
-    <div id="Content">
+    <div class="container-fluid">
       <h1>Blog History</h1>
     </div>
   </div>

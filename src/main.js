@@ -11,6 +11,7 @@ import Education from "./views/Education.vue";
 import Experience from "./views/Experience.vue";
 import CV from "./views/CV.vue";
 import Blog from "./views/Blog.vue";
+import Contact from "./views/Contact.vue";
 
 import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -51,7 +52,7 @@ const routes = [
   {
     path: "/contact",
     name: "Contact",
-    component: Blog,
+    component: Contact,
   },
 ];
 

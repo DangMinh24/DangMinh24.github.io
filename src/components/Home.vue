@@ -5,38 +5,57 @@
   >
     <navigation></navigation>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-1">
-          <img src="" alt="" />
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <img
+            class="img-responsive"
+            v-bind:src="avatar"
+            alt="Mars Rover in Gazebo - One of my personal project"
+          />
         </div>
-        <div class="col-lg-11">
-          <div class="row">
-            <!-- {{ this.$store.state.name }}
-              {{ this.$store.state.lastname }} -->
-            <span class="home-title">Hi! My name is __ __</span>
-          </div>
-          <div class="row">
-            <p>
-              (Still in development) I am a senior Computer Science
-              undergraduate student and upcomming Ph.D candidate at Wichita
-              State Univeristy. I have a strong passion and experience for
-              Robotics, Natural Language Processing, Artificial Intelligence and
-              Machine Learning. I am currently a researching assistant at Robot
-              Intelligence Lab (RIL) at Wichita State Univeristy, and
-              fortunately to be advised by Prof. Hongsheng He. <br /><br />I
-              have worked in varous projects, in both academic and industrial
-              environments.
-            </p>
-          </div>
+        <div class="col-lg-10">
+          <span class="home-title"
+            >Hi! My name is {{ this.$store.state.name }}
+            {{ this.$store.state.lastname }}</span
+          >
+          <p>
+            I am a senior Computer Science undergraduate student and upcomming
+            Ph.D candidate at Wichita State Univeristy. I have a strong passion
+            and experience for Robotics, Natural Language Processing, Artificial
+            Intelligence and Machine Learning. I am currently a researching
+            assistant at Robot Intelligence Lab (RIL) at Wichita State
+            Univeristy, and fortunately to be advised by Prof. Hongsheng He.
+          </p>
+          <p>
+            I have worked in varous projects, in both academic and industrial
+            environments.
+          </p>
         </div>
       </div>
     </div>
     <div class="container-fluid">
       <h2>Research Interests</h2>
       <p>
-        I found interests in solving "Terry Winograd" problem -- making a Robot
+        I am interested in solving "Terry Winograd" problem -- making a Robot
         System can understand human language.
       </p>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <h2>Experiences</h2>
+          <ul class="list">
+            <li>
+              Research Assistant, Manufacturing Programming and Metal AM in
+              National Institute for Aviation Research (NIAR)
+            </li>
+            <li>
+              Research Assistant in Robot Intelligent Laboratory (RIL) at
+              Wichita State University
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -51,8 +70,6 @@ export default {
   name: "Home",
   components: {
     Navigation,
-    Drag,
-    Drop,
   },
   props: {
     nightMode: {
@@ -68,6 +85,9 @@ export default {
       github: info.links.github,
       // angellist: info.links.angellist,
       // resume: info.links.resume,
+
+      // avatar_: "../assets/sample_potrait.png",
+      avatar: require("../assets/sample_potrait.png"),
     };
   },
   // methods: {
