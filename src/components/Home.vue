@@ -12,6 +12,15 @@
             v-bind:src="avatar"
             alt="Mars Rover in Gazebo - One of my personal project"
           />
+          <!-- Add Contact block under image -->
+          <!-- Add Research links Contact under image  
+              ORCID
+              IEEE ID
+              ResearchGate ID
+              ROS-Answer ID
+              WSU Robotic Lab ID
+          -->
+          <!-- Add link Hongsheng He -->
         </div>
         <div class="col-lg-10">
           <span class="home-title"
@@ -56,6 +65,23 @@
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="container-fluid" id="Awards and Honors">
+      <h2>Awards and Honors</h2>
+      <!-- EX: 
+      IEEE HKN Faculty Workshop on Robotics
+        The laboratory continues developing and participating in research programs to involve 
+        both graduate and undergraduate students into lab research. On ... , Dr. He gave a lecture on intelligent 
+        robotics and Robot Operating System (ROS), and two PhD students provided several demonstrations on the Nao 
+        robot and the Sawyer robot. There were 22 graduate and undergraduate students from Wichita State University 
+        participating in the event. Nao robot executed several functions such as dance, walk and tracking a ball by 
+        given natural language orders. This event is expected to enhance the understanding of the basic of robotics 
+        and student's interests. Dr. He will keep recruiting students from local schools and make them gain first-hand 
+        hands-on experiences related to the collaborative robotics technologies using hardware and software developed 
+        in the proposed research work.
+      -->
+      <p></p>
     </div>
   </div>
 </template>

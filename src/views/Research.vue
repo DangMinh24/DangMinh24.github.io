@@ -7,7 +7,7 @@
     <div class="container-fluid">
       <h1 class="text-start">Research History</h1>
       <h2>Publications</h2>
-      <h4>Natural Language for Robotics</h4>
+      <h4>Conference Paper</h4>
       <div class="container-fluid">
         <ul class="list" style="list-style-type: disc">
           <li>
@@ -24,7 +24,7 @@
         </ul>
       </div>
 
-      <h4>Perception for Robotics</h4>
+      <h4>Journal</h4>
       <div class="container-fluid">
         <ul class="list" style="list-style-type: disc">
           <li>
@@ -34,6 +34,19 @@
           </li>
         </ul>
       </div>
+
+      <!-- Template of the paper:
+          Paper-name
+          Authors
+          Conference/Journal name, page, published day
+       -->
+
+      <!-- Teaching: Can apply this template for First page Work:
+          Course Number: Course Name
+          Year Semester, University
+       -->
+
+      <!-- <h4>Books</h4> -->
     </div>
   </div>
 </template>
