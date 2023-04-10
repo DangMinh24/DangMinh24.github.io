@@ -1,7 +1,7 @@
 <template>
   <div class="container-sm">
     <h1 class="text-center">Projects</h1>
-    <ProjectEvent />
+    <ProjectEvent file_name="project_1.png" />
   </div>
 </template>
 

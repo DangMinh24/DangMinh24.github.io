@@ -5,7 +5,11 @@
     <div class="col-md-8">
       <div class="row">
         <div class="col-md-2">
-          <p>Image here</p>
+          <img
+            v-bind:src="require(`@/assets/projects/${file_name}`)"
+            width="140px"
+            height="112px"
+          />
         </div>
         <div class="col-md-10 ">
           <h2>Project Title Here</h2>
@@ -13,16 +17,17 @@
         </div>
       </div>
     </div>
-
     <div class="col-md-2">
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
   name: "ProjectEvent",
+  props: {
+    file_name: String,
+  },
 };
 </script>
 

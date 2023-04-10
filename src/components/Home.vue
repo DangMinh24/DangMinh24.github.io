@@ -4,7 +4,7 @@
     class="pt-5 p-st"
   >
     <div class="container-fluid">
-      <navigation></navigation>
+      <!-- <navigation></navigation> -->
       <div class="container">
         <div class="row align-items-start">
           <div class="col-lg-4">
@@ -58,7 +58,7 @@
     </div>
     <ExperienceSection />
     <ProjectSection />
-
+    <PublicationSection />
   </div>
 </template>
 
@@ -68,10 +68,11 @@ import { Drag, Drop } from "vue-drag-drop";
 import Test from "./Test.vue";
 import ExperienceSection from "./ExperienceSection.vue";
 import ProjectSection from "./ProjectSection.vue";
+import PublicationSection from "./PublicationSection.vue";
+
 // import OhVueIcon from "oh-vue-icons";
 
 import Navigation from "./Navigation.vue";
-
 export default {
   name: "Home",
   components: {
@@ -79,6 +80,7 @@ export default {
     Test,
     ExperienceSection,
     ProjectSection,
+    PublicationSection,
   },
   props: {
     nightMode: {
