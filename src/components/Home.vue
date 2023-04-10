@@ -3,99 +3,82 @@
     :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
     class="pt-5 p-st"
   >
-    <navigation></navigation>
     <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-lg-2">
-          <img
-            class="img-responsive"
-            v-bind:src="avatar"
-            alt="Mars Rover in Gazebo - One of my personal project"
-          />
-          <!-- Add Contact block under image -->
-          <!-- Add Research links Contact under image  
+      <navigation></navigation>
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-lg-4">
+            <div class="text-center">
+              <img
+                class="rounded-circle"
+                v-bind:src="avatar"
+                alt="Mars Rover in Gazebo - One of Dang's personal project"
+                width="270"
+                height="270"
+              />
+              <Test />
+              <!-- Add Contact block under image -->
+              <!-- Add Research links Contact under image  
               ORCID
               IEEE ID
               ResearchGate ID
               ROS-Answer ID
               WSU Robotic Lab ID
           -->
-          <!-- Add link Hongsheng He -->
-        </div>
-        <div class="col-lg-10">
-          <span class="home-title"
-            >Hi! My name is {{ this.$store.state.name }}
-            {{ this.$store.state.lastname }}</span
-          >
-          <p>
-            I am a senior Computer Science undergraduate student and upcomming
-            Ph.D candidate at Wichita State Univeristy. I have a strong passion
-            and experience for Robotics, Natural Language Processing, Artificial
-            Intelligence and Machine Learning. I am currently a researching
-            assistant at Robot Intelligence Lab (RIL) at Wichita State
-            Univeristy, and fortunately to be advised by Prof. Hongsheng He.
-          </p>
-          <p>
-            I have worked in varous projects, in both academic and industrial
-            environments.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <h2>Research Interests</h2>
-      <p>
-        I am interested in solving "Terry Winograd" problem -- making a Robot
-        System can understand human language.
-      </p>
-    </div>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <h2>Experiences</h2>
-          <ul class="list">
-            <li>
-              Research Assistant, Manufacturing Programming and Metal AM in
-              National Institute for Aviation Research (NIAR)
-            </li>
-            <li>
-              Research Assistant in Robot Intelligent Laboratory (RIL) at
-              Wichita State University
-            </li>
-          </ul>
+              <!-- Add link Hongsheng He -->
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <span class="home-title">Hi! My name is {{ name }}</span>
+            <p>
+              I am currently a Ph.D candidate at Wichita State Univeristy, under
+              supervision of Dr. Hongsheng He. My dissertation focused on applying
+              Natural Language Interface (NL) on robotic system. I have hands-on
+              experience with various robot platforms, sensors, simulators.
+            </p>
+            <p>
+              I am currently a Graduate Research Assistant at Robot Intelligence
+              Lab (RIL) at Wichita State Univeristy, developing various robotic
+              projects, particularly using ROS framework and simulation.
+            </p>
+            <p>
+              I have participated in varous projects, in both academic and
+              industrial environments. Some robotic models that I have experienced
+              with:
+            <ol>
+              <li>Sawyer</li>
+              <li>Husky</li>
+              <li>FANUC LRMate 200iD/7L</li>
+            </ol>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container-fluid" id="Awards and Honors">
-      <h2>Awards and Honors</h2>
-      <!-- EX: 
-      IEEE HKN Faculty Workshop on Robotics
-        The laboratory continues developing and participating in research programs to involve 
-        both graduate and undergraduate students into lab research. On ... , Dr. He gave a lecture on intelligent 
-        robotics and Robot Operating System (ROS), and two PhD students provided several demonstrations on the Nao 
-        robot and the Sawyer robot. There were 22 graduate and undergraduate students from Wichita State University 
-        participating in the event. Nao robot executed several functions such as dance, walk and tracking a ball by 
-        given natural language orders. This event is expected to enhance the understanding of the basic of robotics 
-        and student's interests. Dr. He will keep recruiting students from local schools and make them gain first-hand 
-        hands-on experiences related to the collaborative robotics technologies using hardware and software developed 
-        in the proposed research work.
-      -->
-      <p></p>
     </div>
+    <ExperienceSection />
+    <ProjectSection />
+
   </div>
 </template>
 
 <script>
 import info from "../../info";
 import { Drag, Drop } from "vue-drag-drop";
-// import Wave from "./helpers/Wave";
+import Test from "./Test.vue";
+import ExperienceSection from "./ExperienceSection.vue";
+import ProjectSection from "./ProjectSection.vue";
+// import OhVueIcon from "oh-vue-icons";
 
 import Navigation from "./Navigation.vue";
+
 export default {
   name: "Home",
   components: {
     Navigation,
+    Test,
+    ExperienceSection,
+    ProjectSection,
   },
   props: {
     nightMode: {
@@ -106,9 +89,9 @@ export default {
     return {
       picture: info.flat_picture,
       description: info.description,
-      name: info.name,
-      linkedin: info.links.linkedin,
-      github: info.links.github,
+      name: "Dang Tran",
+      // linkedin: info.links.linkedin,
+      // github: info.links.github,
       // angellist: info.links.angellist,
       // resume: info.links.resume,
 

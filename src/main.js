@@ -1,11 +1,6 @@
-import Vue from "vue";
 import App from "./App.vue";
-import VueRouter from "vue-router";
-import { store } from "./store/store";
-
-Vue.use(VueRouter);
-
 import Home from "./components/Home.vue";
+import Test from "./components/Test.vue";
 import Research from "./views/Research.vue";
 import Education from "./views/Education.vue";
 import Experience from "./views/Experience.vue";
@@ -13,11 +8,28 @@ import CV from "./views/CV.vue";
 import Blog from "./views/Blog.vue";
 import Contact from "./views/Contact.vue";
 
+
+import Vue from "vue";
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
+
 import BootstrapVue from "bootstrap-vue/dist/bootstrap-vue.esm";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import "bootstrap/dist/css/bootstrap.css";
-
 Vue.use(BootstrapVue);
+
+// import { OhVueIcon, addIcons} from 'oh-vue-icons'
+// import { AiAcademiaSquare } from 'oh-vue-icons/icons/ai'
+// addIcons(AiAcademiaSquare)
+// Vue.component("v-icon", OhVueIcon);
+
+
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// library.add(faHatWizard)
+// Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 const routes = [
   {
     path: "/",
@@ -54,15 +66,25 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
+  {
+    path: "/test",
+    name: "Test",
+    component: Test,
+
+  }
 ];
 
 const router = new VueRouter({
   mode: "history",
-  routes, // short for `routes: routes`
+  routes,
 });
 
-new Vue({
+
+const app = new Vue({
+  el: "#app",
   render: (h) => h(App),
   router,
-  store,
-}).$mount("#app");
+  components: {
+    App,
+  },
+});
