@@ -91,19 +91,19 @@
         <br>
 
         <!-- !Publication -->
-        <div class="row">
-          <div class="col-md-3">
-            <img
-              class="img-fluid img-rounded"
-              v-bind:src="require(`@/assets/projects/International Journal of Social Robotics 2020.png`)"
-            />
-          </div>
-          <div class="col-md-9">
-            <p> Fujian Yan, Dang Tran and Hongsheng He (2020)</p>
-            <b>Robotic Understanding of Object Semantics by Referring to a Dictionary</b>
-            <p>International Journal of Social Robotics 2020</p>
-          </div>
-        </div>
+        <!-- <div class="row"> -->
+        <!-- <div class="col-md-3"> -->
+        <!-- <img -->
+        <!-- class="img-fluid img-rounded" -->
+        <!-- v-bind:src="require(`@/assets/projects/International Journal of Social Robotics 2020.png`)" -->
+        <!-- /> -->
+        <!-- </div> -->
+        <!-- <div class="col-md-9"> -->
+        <!-- <p> Fujian Yan, Dang Tran and Hongsheng He (2020)</p> -->
+        <!-- <b>Robotic Understanding of Object Semantics by Referring to a Dictionary</b> -->
+        <!-- <p>International Journal of Social Robotics 2020</p> -->
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </div>
     <br>
@@ -145,11 +145,58 @@
     </div>
     <br>
 
-    <!-- !Personal Projects -->
+    <!-- !Projects -->
     <div class="container">
-      <h3>Personal Projects</h3>
+      <h3>Projects</h3>
       <hr>
+
+      <!-- !Project -->
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            class="img-fluid img-rounded"
+            v-bind:src="require(`@/assets/personal_projects/project_nlp_robot.png`)"
+            alt=""
+          >
+        </div>
+        <div class="col-md-9">
+          <b> Integrate NLP framework to Robotic Controls</b>
+        </div>
+      </div>
+      <br>
+
+      <!-- !Project -->
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            class="img-fluid img-rounded"
+            v-bind:src="require(`@/assets/personal_projects/project_CAD2Path.png`)"
+            alt=""
+          >
+        </div>
+        <div class="col-md-9">
+          <b> Develop CAD2Path program with C++ & Roboguide </b>
+        </div>
+      </div>
+      <br>
+
+      <!-- !Project -->
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            class="img-fluid img-rounded"
+            v-bind:src="require(`@/assets/personal_projects/project_mobile.png`)"
+            alt=""
+          >
+        </div>
+        <div class="col-md-9">
+          <b> Control Mobile Robot with Navigation Stack & State-Machine </b>
+        </div>
+      </div>
+      <br>
+
     </div>
+
     <!-- <PublicationSection /> -->
     <!-- <ExperienceSection />
     
