@@ -4,6 +4,48 @@
     class="pt-5 p-st"
   >
     <div class="container">
+      <nav class="navbar navbar-expand-md">
+        <a
+          class=navbar-brand
+          href="#"
+        >
+          Dang Tran
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+              >Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#Publications"
+              >Publications</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#Experiences"
+              >Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#Projects"
+              >Projects</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#Contact"
+              >Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <!-- <navigation></navigation> -->
 
       <!-- !Profile -->
@@ -44,6 +86,7 @@
               <li>Sawyer</li>
               <li>Husky</li>
               <li>FANUC LRMate</li>
+              <li>Nao</li>
             </ol>
             </p>
           </div>
@@ -52,7 +95,10 @@
       </div>
 
       <!-- !Publications -->
-      <div class="container">
+      <div
+        id="Publications"
+        class="container"
+      >
         <h3>Publications</h3>
         <hr>
         <!-- !Publication -->
@@ -68,7 +114,7 @@
             <p> Dang Tran, Nate Ahlgren, Chris Depcik, and Hongsheng He (2023)</p>
             <b>Adaptive Active Fusion of Camera and Single-Point
               LiDAR for Depth Estimation</b>
-            <p>ICSR2021</p>
+            <p>IEEE TIM 2023</p>
           </div>
         </div>
         <br>
@@ -91,25 +137,28 @@
         <br>
 
         <!-- !Publication -->
-        <!-- <div class="row"> -->
-        <!-- <div class="col-md-3"> -->
-        <!-- <img -->
-        <!-- class="img-fluid img-rounded" -->
-        <!-- v-bind:src="require(`@/assets/projects/International Journal of Social Robotics 2020.png`)" -->
-        <!-- /> -->
-        <!-- </div> -->
-        <!-- <div class="col-md-9"> -->
-        <!-- <p> Fujian Yan, Dang Tran and Hongsheng He (2020)</p> -->
-        <!-- <b>Robotic Understanding of Object Semantics by Referring to a Dictionary</b> -->
-        <!-- <p>International Journal of Social Robotics 2020</p> -->
-        <!-- </div> -->
-        <!-- </div> -->
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              class="img-fluid img-rounded"
+              v-bind:src="require(`@/assets/projects/International Journal of Social Robotics 2020.png`)"
+            />
+          </div>
+          <div class="col-md-9">
+            <p> Fujian Yan, Dang Tran and Hongsheng He (2020)</p>
+            <b>Robotic Understanding of Object Semantics by Referring to a Dictionary</b>
+            <p>International Journal of Social Robotics 2020</p>
+          </div>
+        </div>
       </div>
     </div>
     <br>
 
     <!-- !Experiences -->
-    <div class="container">
+    <div
+      id="Experiences"
+      class="container"
+    >
       <h3>Experiences</h3>
       <hr>
 
@@ -146,7 +195,10 @@
     <br>
 
     <!-- !Projects -->
-    <div class="container">
+    <div
+      id="Projects"
+      class="container"
+    >
       <h3>Projects</h3>
       <hr>
 
@@ -185,6 +237,21 @@
         <div class="col-md-3">
           <img
             class="img-fluid img-rounded"
+            v-bind:src="require(`@/assets/personal_projects/project_knowledge_based_planning.png`)"
+            alt=""
+          >
+        </div>
+        <div class="col-md-9">
+          <b> Knowledge-based Planning for Robotic Controls</b>
+        </div>
+      </div>
+      <br>
+
+      <!-- !Project -->
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            class="img-fluid img-rounded"
             v-bind:src="require(`@/assets/personal_projects/project_mobile.png`)"
             alt=""
           >
@@ -195,12 +262,54 @@
       </div>
       <br>
 
+      <!-- !Project -->
+      <div class="row">
+        <div class="col-md-3">
+          <img
+            class="img-fluid img-rounded"
+            v-bind:src="require(`@/assets/personal_projects/project_pybullet.png`)"
+            alt=""
+          >
+        </div>
+        <div class="col-md-9">
+          <b> Reinforcement Learning with OpenAI Gym and Pybullet</b>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- !News -->
+    <div class="container">
+      <h3>News</h3>
+      <hr>
+    </div>
+    <br>
+
+    <!-- !Contact -->
+    <div
+      id="Contact"
+      class="container"
+    >
+      <h3>Contact</h3>
+      <hr>
+      Robot Intelligence Laboratory
+      <br>
+      Wallace Hall
+      <br>
+      1845 Fairmount St.
+      <br>
+      Kansas, USA, 67260
+      <br>
+      dangtm24[at]gmail[dot]com
+    </div>
+    <br>
+
+    <!-- !Footer -->
+    <div class="container">
+      <hr>
+      © Dang Tran 2023
     </div>
 
-    <!-- <PublicationSection /> -->
-    <!-- <ExperienceSection />
-    
-    <PublicationSection /> -->
   </div>
 </template>
 
@@ -266,3 +375,4 @@ export default {
 <style scoped>
 /* LEAVES */
 </style>
+
