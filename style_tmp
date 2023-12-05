@@ -1,0 +1,44 @@
+.home-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+img {
+  max-width: 300px;
+  margin-top: 60px;
+  transform: rotateY(180deg);
+}
+@media only screen and (max-width: 580px) {
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(205, 205, 205);
+  }
+}
+.fa {
+  font-size: 15px;
+}
+.btn {
+  border-color: #669db3ff;
+  color: #669db3ff;
+}
+.btn:hover {
+  background-color: #669db3ff;
+  border-color: #669db3ff;
+  color: white;
+}
+.btn:focus {
+  background-color: #669db3ff;
+  border-color: #669db3ff;
+  color: white;
+}
+.btn:focus {
+  outline: none !important;
+}
+p {
+  text-align: justify;
+  font-weight: 400;
+}
