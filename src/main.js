@@ -1,6 +1,5 @@
 import App from "./App.vue";
 import Home from "./components/Home.vue";
-import Test from "./components/Test.vue";
 import Research from "./views/Research.vue";
 import Education from "./views/Education.vue";
 import Experience from "./views/Experience.vue";
@@ -66,12 +65,7 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
-  {
-    path: "/test",
-    name: "Test",
-    component: Test,
 
-  }
 ];
 
 const router = new VueRouter({
